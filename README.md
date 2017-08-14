@@ -62,9 +62,9 @@ python rocket_interval.py --save logs/at_16_2_40_2 --width 2 --teacher_id resnet
 
 Fifth column, train with KD:
 ```
-python rocket_interval.py --save logs/kd_16_1_16_2 --width 1 --teacher_id resnet_40_1_booster --alpha 0.9
-python rocket_interval.py --save logs/kd_16_2_16_2 --width 2 --teacher_id resnet_40_2_booster --alpha 0.9
-python rocket_bottom.py --save logs/kd_bottom_16_1_40_1 --teacher_id resnet_40_1_booster --alpha 0.9
+python rocket_interval.py --save logs/kd_16_1_40_2_kd --width 1 --teacher_id resnet_40_1_booster --alpha 0.9
+python rocket_interval.py --save logs/kd_16_2_40_2_kd --width 2 --teacher_id resnet_40_2_booster --alpha 0.9
+python rocket_bottom.py --save logs/kd_bottom_16_1_40_1_kd --teacher_id resnet_40_1_booster --alpha 0.9
 ```
 
 Sixth column and eighth column, train rocket launching:
